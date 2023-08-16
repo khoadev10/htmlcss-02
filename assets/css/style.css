@@ -43,6 +43,7 @@ a {
 .header.fixed {
     position: sticky;
     top: -28px;
+    z-index: 9;
 }
 
 .header .body {
@@ -94,4 +95,146 @@ a {
     border-radius: 24.5px;
     min-width: 144px;
     background: #171100;
+}
+
+/* ============= Hero ============= */
+.hero {
+    background: #fffcf4;
+    padding: 56px 0 65px;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.hero .media-block {
+    position: relative;
+    width: 48%;
+}
+
+.media-block .sub-img {
+    display: block;
+    margin-right: auto;
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.stats-courses {
+    background: #fff;
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.stats-courses .item {
+    display: flex;
+    align-items: center;
+}
+
+.stats-courses .item + .item {
+    margin-top: 14px;
+}
+
+.stats-courses .item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #fcefff;
+}
+
+.stats-courses .info .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.stats-courses .info .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero .text-block {
+    width: 52%;
+    padding: 64px 0 0 130px;
+}
+
+.text-block .heading {
+    color: #171100;
+    font-family: Sen;
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17;
+    letter-spacing: -1.16px;
+    margin-bottom: 22px;
+}
+
+.text-block .sub-title {
+    color: #5f5b53;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.67; /* 166.667% */
+}
+
+.hero-action .btn-see-course {
+    background-color: #ffb900;
+    border-radius: 32px;
+    margin: 38px 28px 48px 0;
+    height: 64px;
+    min-width: 180px;
+    font-size: 1.8rem;
+    line-height: 64px;
+}
+
+.hero-action .watch-video {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.watch-video .icon-play {
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.07);
+    line-height: 40px;
+}
+
+.watch-video span {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67; /* 166.667% */
+}
+
+.text-block .sub-title strong {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.23;
+}
+
+.text-block .sub-title.mb-8 {
+    margin-bottom: 8px;
+}
+
+.text-block span.sub-title + span.sub-title {
+    margin-left: 28px;
 }
