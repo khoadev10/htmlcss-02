@@ -49,6 +49,10 @@ a {
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+
+.line-2 {
+    --line-clamp: 2;
+}
 /* ============= Header ============= */
 .header {
     background: #fffcf4;
@@ -319,6 +323,7 @@ a {
 }
 
 /* Courses */
+
 .popular .list-course {
     display: flex;
     gap: 30px;
@@ -333,7 +338,6 @@ a {
 
 .popular .list-course .card-course:hover {
     border-color: transparent;
-    cursor: pointer;
 }
 
 .card-course .img-thumb {
@@ -366,7 +370,8 @@ a {
     line-height: 1.75; /* 175% */
 }
 
-.card-course .card-body .title {
+.card-course .card-body .title a {
+    word-break: break-all;
     color: var(--primary-color);
     font-size: 1.8rem;
     font-weight: 600;
@@ -375,6 +380,7 @@ a {
 
 .card-course .card-body .sub-title {
     margin: 6px 0 12px;
+    word-break: break-all;
     color: #5f5b53;
     font-size: 1.4rem;
     font-weight: 400;
@@ -396,4 +402,79 @@ a {
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1.67; /* 166.667% */
+}
+
+/* ============= feedback ============= */
+.feedback {
+    background: #2e2100;
+    margin-top: 200px;
+    padding: 96px 0;
+}
+
+/* Student Info */
+.feedback-item {
+    display: flex;
+}
+
+.feedback-item .avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.feedback-item .student-name {
+    margin-top: 18px;
+    color: #f7f7f7;
+    font-family: var(--font-heading);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.42; /* 141.667% */
+}
+
+.feedback-item .desc {
+    margin-top: 4px;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86; /* 185.714% */
+}
+
+.feedback-item .dots {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-item .dots .dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #634700;
+}
+
+.feedback-item .dots .dot + .dot {
+    margin-left: 6px;
+}
+
+.feedback-item .dots .dot.active {
+    background: #ffb900;
+}
+
+/* Feedback content */
+.feedback-content {
+    width: 65.8%;
+    margin-left: auto;
+}
+
+.quotation-mark {
+    transform: translateX(-100%);
+}
+
+.feedback-content blockquote {
+    color: #fff;
+    font-size: 2.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.54; /* 153.846% */
 }
