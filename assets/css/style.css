@@ -10,12 +10,12 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
-    height: 5000px;
 }
 
 /* ============= Common ============= */
@@ -680,7 +680,7 @@ a {
 }
 
 .blog .dot {
-    background-color: #5F5B53;
+    background-color: #5f5b53;
 }
 
 .blog .dot.active {
@@ -689,4 +689,85 @@ a {
 
 .blog .dot + .dot {
     margin-left: 6px;
+}
+
+/* ============= Footer ============= */
+.footer {
+    padding-top: 96px;
+    background: #2e2100;
+    color: #bfbcb2;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .row {
+    display: flex;
+}
+
+.footer .column:nth-child(1) {
+    width: 35.2%;
+}
+
+.footer .column:nth-child(2) {
+    width: 22.2%;
+}
+.footer .column:nth-child(3) {
+    width: 22.8%;
+}
+.footer .column:nth-child(4) {
+    width: 19.8%;
+}
+
+.footer .desc {
+    margin: 18px 0;
+    max-width: 267px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.footer .title {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.footer .column .line-title {
+    margin: 14px 0 28px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer ul li + li {
+    margin-top: 12px;
+}
+
+.footer-address + .footer-address {
+    margin-top: 12px;
+}
+
+.footer-address span {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.86; /* 185.714% */
+}
+
+.footer .line-boundary {
+    margin-top: 38px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer-bottom {
+    padding: 28px 0;
+    color: #807d74;
+    text-align: center;
+    line-height: 1.86;
 }
