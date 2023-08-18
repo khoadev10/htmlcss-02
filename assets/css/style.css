@@ -413,8 +413,8 @@ a {
 
 /* Student Info */
 .feedback-list {
-    display: flex; 
-    overflow: hidden;  
+    display: flex;
+    overflow: hidden;
 }
 
 .feedback-item {
@@ -485,4 +485,84 @@ a {
     font-style: italic;
     font-weight: 400;
     line-height: 1.54; /* 153.846% */
+}
+
+/* ============= Features ============= */
+.mt-200 {
+    margin-top: 200px;
+}
+
+.w-left {
+    width: 48.6%;
+}
+
+.w-right {
+    width: 51.4%;
+}
+
+.features .row {
+    display: flex;
+}
+
+/* Top */
+.features-images {
+    display: flex;
+    gap: 30px;
+}
+
+.img-feature-left {
+    width: 270px;
+    height: 404px;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.features-images .img-feature-left:first-child {
+    transform: translateY(34px);
+}
+
+.features-text.w-right {
+    padding: 58px 0 58px 130px;
+}
+
+.features-text .heading {
+    margin-bottom: 16px;
+    color: var(--primary-color);
+    font-family: var(--font-heading);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.features-text .desc {
+    margin-bottom: 16px;
+    color: #5f5b53;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+
+.btn-feature {
+    margin-top: 16px;
+    min-width: 137px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    border-radius: 26px;
+    background-color: var(--highlight-color);
+}
+
+/* Bottom */
+.features-text.w-left {
+    padding: 71px 0;
+}
+
+.img-feature-right {
+    width: 470px;
+    height: 440px;
+    margin-left: 130px;
+    border-radius: 20px;
+    object-fit: cover;
 }
