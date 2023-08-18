@@ -412,8 +412,15 @@ a {
 }
 
 /* Student Info */
+.feedback-list {
+    display: flex; 
+    overflow: hidden;  
+}
+
 .feedback-item {
     display: flex;
+    width: 100%;
+    flex-shrink: 0;
 }
 
 .feedback-item .avatar {
@@ -451,6 +458,7 @@ a {
     height: 6px;
     border-radius: 6px;
     background: #634700;
+    cursor: pointer;
 }
 
 .feedback-item .dots .dot + .dot {
@@ -458,7 +466,7 @@ a {
 }
 
 .feedback-item .dots .dot.active {
-    background: #ffb900;
+    background: var(--highlight-color);
 }
 
 /* Feedback content */
